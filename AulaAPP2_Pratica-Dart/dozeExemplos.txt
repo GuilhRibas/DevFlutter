@@ -1,0 +1,318 @@
+1.
+void main() {
+  
+  double totalizar = notaAlunos(7,4,9);
+  print(totalizar);
+}
+
+String letra ='C';
+double mmc= 252;
+
+double notaAlunos(double nota1, double nota2, double nota3){
+  
+  if(letra == "A"){
+    double resultado = (nota1+nota2+nota3)/3;
+    return resultado;
+  }else if(letra == "B"){
+    double resultado = (nota1* 5 + nota2* 3 + nota3* 2)/10;
+    return resultado;
+  }else if(letra == 'C'){
+    double resultadoP = (nota1 + nota2 + nota3)/((mmc)/3);
+    return resultadoP;
+  }else{
+    return 0;
+  }
+  
+}
+_____________________________
+  
+2.
+void main() {
+ int calcular = calcularMenor(7,8);
+ print(calcular);
+}
+
+
+int calcularMenor(int a,int b){
+  if(a > b){
+    print("A é maior que B");
+    return a;
+  }else if(b > a){
+    print("B é maior que A");
+    return b;
+  }else{
+    print("Erro.");
+    return 0;
+  }
+}
+  
+_____________________________
+
+3.
+void main() {
+ int calcular = testePrimo(4);
+ print(calcular);
+}
+
+
+int testePrimo(int a){
+  
+  bool comp = (true && false);
+  bool teste = (a % 2==0) || comp;
+  print("true == primo; false == não é primo");
+  print("_______");
+  print(teste);
+  return a;
+    
+}
+_____________________________
+4.
+void main() {
+ int calcular = testePrimo(-4);
+ print(calcular);
+}
+
+
+int testePrimo(int a){
+  
+  bool comp = (true && false);
+  bool teste = (a>1) || comp;
+  print("true == positivo; false == negativo");
+  print("_______");
+  print(teste);
+  return a;
+    
+}
+
+_____________________________
+
+5.
+void main() {
+ double calcularMedia = testeAritMedia(4,5,3,6);
+ print(calcularMedia);
+}
+
+
+double testeAritMedia(double a, double b, double c, double d){
+  double total = (a + b + c + d)/4;
+  print("Media: ");
+  return total;
+ 
+}
+
+_____________________________
+
+6.
+void main() {
+ double calcularMedia = somarMedia(4,5);
+ print(calcularMedia);
+}
+
+
+double somarMedia(double a, double b){
+
+  if(a>1 && b>1){
+    double total = a+b;
+    return total;
+  }else{
+    return 0;
+  }
+ 
+}
+
+_____________________________
+
+7.
+void main() {
+ double calcularConceito = somarMediaNota(7);
+ print(calcularConceito);
+
+}
+
+
+double somarMediaNota(double nota){
+
+  if(nota<=4.9){
+    print("conceito D");
+    return nota;
+    
+  }else if(nota>=5 && nota<=6.9){
+    print("conceito C");
+    return nota;
+    
+  }else if(nota>=7 && nota<8.9){
+    print("conceito B");
+    return nota;
+    
+  }else if(nota>=9 && nota<=10){
+    print("conceito A");
+    return nota;
+
+  }else{
+    print("Erro. Sem conceito.");
+    return 0;
+  }
+    
+}
+
+_____________________________
+
+8.
+void main() {
+ double idade = idadePessoa(7);
+ print(idade);
+
+}
+
+
+double idadePessoa(double idade){
+
+  if(idade>=5 && idade<=7){
+    print("Infantil A");
+    return idade;
+    
+  }else if(idade>=8 && idade<=10){
+     print("Infantil B");
+    return idade;
+    
+  }else if(idade>=11 && idade<=13){
+    print("Juvenil A");
+    return idade;
+    
+  }else if(idade>=14 && idade<=17){
+   print("Juvenil B");
+    return idade;
+    
+ }else if(idade>=18){
+    print("Adulto");
+    return idade;
+
+  }else{
+    print("Erro. Sem conceito.");
+    return 0;
+  }
+    
+}
+_____________________________
+
+9.
+void main() {
+ int calcularPar = testePar(2);
+ print(calcularPar);
+}
+
+
+int testePar(int a){
+  
+ 
+  if(a%2==0){
+    print("Número par.");
+    return 1;
+
+  }else{
+     print("Número Impar.");
+    return 0;
+  }
+  
+    
+}
+_____________________________
+
+10.
+void main() {
+ double calcul = calcularNum(2,7);
+ print(calcul);
+}
+
+
+double calcularNum(double a, double b){
+  double total = a + b;
+  print(total);
+  
+  double quadradoP = a*a;
+  print(quadradoP);
+  
+  
+  double somaTriplo =(3*(total *2));
+  print(somaTriplo);
+  
+  double taoalizar = somaTriplo/2;
+  print(taoalizar);
+  
+  double modulo = a;
+  print(modulo);
+  
+  double resultado =  (a * b) *(b*b);
+  return resultado;
+  
+
+  
+    
+}
+
+_____________________________
+
+11.
+void main() {
+ double calcular = calcularValor(7,7);
+ print(calcular);
+}
+
+
+double calcularValor(double a, double b){
+  
+  if(a>b){
+    
+    print(a);
+    return b;
+  
+  }else if(a<b){
+    
+    print(b);
+    return a;
+    
+  }else if(a==b){
+    print("Valores iguais!");
+    return 0;
+  }else{
+    return 0;
+  }
+
+  
+    
+
+  
+}
+
+_____________________________
+
+12.
+void main() {
+ double calcular = calcularDora(5,10);
+ print(calcular);
+}
+
+
+double calcularDora(double a, double b){
+  
+  double total = a+b;
+  print("Soma: $total");
+  
+  double mult = a*b;
+  print("Multiplicação: $mult");
+  
+  double div = a/b;
+  print("Divisão: $div");
+  
+  double sub = a-b;
+  print("Subtração: $sub");
+  return 1;
+
+  
+    
+
+  
+}
+
+_____________________________
+
